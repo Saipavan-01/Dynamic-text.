@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #1d1f20;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+h1{
+    font-size: 4em;
+    color: #d7b94c;
+}
+
+.t{
+    position: relative;
+
+}
+.t::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: #1d1f20;
+    width: 100%;
+    animation: typing 3s steps(18) alternate infinite,
+                line 1s infinite;
+
+
+
+}
+@keyframes typing{
+    to{
+        width: 0;
+    }
+}
+@keyframes line{
+    50%{
+        color: transparent;
+    }
+}
